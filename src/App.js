@@ -5,9 +5,13 @@ import { mockData } from "./mockData";
 import EventItems from "./EventItems/EventItems";
 
 function App() {
+  const generateShow = () => {
+    return [...new Set(mockData.map((item) => item.type))];
+  };
+
   return (
     <div className="App">
-      <Header />
+      <Header show={generateShow()} />
       <PopSlider />
       <div className="api-card-container">
         {mockData.map((item) => (

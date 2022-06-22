@@ -1,9 +1,6 @@
 import React from "react";
-import { useState } from "react";
 
-const Header = () => {
-  const [selects, setSelects] = useState();
-
+const Header = ({ show }) => {
   return (
     <header className="header-container">
       <div className="top-header">
@@ -15,17 +12,20 @@ const Header = () => {
         </div>
       </div>
       <div className="bottom-header-filters">
-        <select value={selects} onChange={(e) => setSelects(e.target.value)}>
-          <option>KONSER</option>
-          <option>TİYATRO</option>
-          <option>SERGİ</option>
+        <select className="form-control" id="show">
+          <option value="">Kategoriler</option>
+          {show.map((show) => (
+            <option value={show} key={show}>
+              {show}
+            </option>
+          ))}
         </select>
-        <select value={selects} onChange={(e) => setSelects(e.target.value)}>
+        <select>
           <option>BUGÜN</option>
           <option>HAFTAYA</option>
           <option>GELECEK</option>
         </select>
-        <select value={selects} onChange={(e) => setSelects(e.target.value)}>
+        <select>
           <option>ANKARA</option>
           <option>İSTANBUL</option>
           <option>İZMİR</option>

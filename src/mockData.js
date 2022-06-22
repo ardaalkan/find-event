@@ -33,9 +33,9 @@ export const mockData = [
   },
   {
     id: "2",
-    show: "Haluk Bilginer Kral Lear Oyuncu, Çevirmen",
+    show: "Haluk Bilginer, Kral Lear",
     type: "tiyatro",
-    zaman: "2022-08-18T01:03:25Z",
+    zaman: "2022-08-11T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://ichef.bbci.co.uk/news/640/cpsprodpb/10887/production/_109891776_d8d04785-7482-4798-82b6-dd243bf5796b.jpg",
@@ -67,7 +67,7 @@ export const mockData = [
     id: "4",
     show: "İrisi Akademi Çocuk Oyunları",
     type: "tiyatro",
-    zaman: "2022-09-18T01:03:25Z",
+    zaman: "2022-09-15T01:03:25Z",
     ücret: "ücretsiz",
     image: ["https://www.amasya.edu.tr/media/284415/01_800x533.jpg"],
     mekan: "Amasya Belediyesi Kültür Merkezi",
