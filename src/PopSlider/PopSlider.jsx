@@ -47,14 +47,14 @@ const PopSlider = () => {
       <h1> Popüler Etkinlikler </h1>
       <div className="popslider-container">
         <Slider {...settings}>
-          {dataForSlide.map((item, key) => (
+          {dataForSlide.map((item) => (
             <div className="card">
               <div className="card-top">
                 <img src={item.linkImg} alt={item.title} />
                 <h1>{item.title}</h1>
               </div>
               <div className="card-bottom">
-                <h3>{item.price}</h3>
+                <h3>{item.price} ₺</h3>
                 <p className="category">{item.category}</p>
               </div>
             </div>

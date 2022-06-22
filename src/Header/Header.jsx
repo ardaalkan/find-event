@@ -1,11 +1,26 @@
 import React from "react";
+import { useState } from "react";
 
-const Header = ({ show }) => {
+const Header = ({ show, showFilter }) => {
+  const [name, setName] = useState("");
+
+  const handleNameChange = (event) => {
+    const { value } = event.target;
+    setName(value);
+    showFilter(value);
+  };
+
   return (
     <header className="header-container">
       <div className="top-header">
         <div>
-          <input placeholder="Etkinlik, sanatçı ya da mekan arayın"></input>
+          <input
+            className="form-control"
+            placeholder="Etkinlik, sanatçı ya da mekan arayın"
+            type="text"
+            id="name"
+            onChange={handleNameChange}
+          />
         </div>
         <div>
           <h2>Giriş Yap</h2>
