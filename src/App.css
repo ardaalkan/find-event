@@ -1,38 +1,192 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+hr {
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+  box-shadow: #333;
+  border-bottom: 1px solid #b4b4b4;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Header */
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-container .top-header {
+  background-image: radial-gradient(
+    circle,
+    #1779fb,
+    #1268e8,
+    #0c57d4,
+    #0646c1,
+    #0035ae
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-container .top-header input {
+  height: 1.5rem;
+  width: 30rem;
+  margin-right: 1rem;
+  background-color: rgb(241, 241, 241);
+  padding: 1.1rem;
+  font-weight: bold;
+}
+
+.bottom-header-filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: baseline;
+  margin: 1rem;
+  height: 2rem;
+}
+
+.bottom-header-filters select {
+  margin-right: 7rem;
+  height: 25px;
+  width: 235px;
+}
+
+.popslider-container-box {
+  width: 55%;
+  margin: 0 auto;
+}
+
+.popslider-container-box > h1 {
+  margin: 15px auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #6d6d6d;
+}
+
+/* popslider-container */
+.popslider-container-box .card {
+  margin-top: 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  overflow: 8px;
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #fbfbfb,
+    #f7f7f7,
+    #f4f4f4,
+    #f0f0f0
+  );
+}
+
+.slick-slide > div {
+  margin: 0 5px;
+}
+
+.slick-list {
+  margin: 0 -1px;
+}
+
+.card-top > img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-top h1 {
+  font-size: 1rem;
+  margin: 10px 20px;
+}
+
+.card-bottom {
+  margin: 10px 20px;
+}
+
+.card-bottom h3 {
+  font-size: 0.9rem;
+}
+
+/* events lists*/
+
+.api-card-container {
+  width: 55%;
+  margin: 70px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.api-card-container .api-card-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #fbfbfb,
+    #f7f7f7,
+    #f4f4f4,
+    #f0f0f0
+  );
+  width: 240px;
+  height: 350px;
+  margin-right: 1rem;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.api-card-item .api-card-container-top-card {
+  background-color: #ebebeb;
+  margin-bottom: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.api-card-item .api-card-container-top-card img {
+  width: 100%;
+}
+
+.api-card-item .api-card-container-bottom-card {
+  background-color: rgb(255, 151, 151);
+  width: 90%;
+  padding: 20px;
 }
