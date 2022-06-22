@@ -3,11 +3,39 @@ import { useState } from "react";
 
 const Header = ({ show, showFilter }) => {
   const [name, setName] = useState("");
+  const [city, setCity] = useState("");
+  const [from, setFrom] = useState("");
+  const [to, setTo] = useState("");
 
-  const handleNameChange = (event) => {
+  const [filters, setFilters] = useState({
+    name: "",
+    city: "",
+    from: "",
+    to: "",
+  });
+
+  const handleInput = (field) => (event) => {
     const { value } = event.target;
-    setName(value);
-    showFilter(value);
+
+    setFilters({
+      ...filters,
+      [field]: value,
+    });
+
+    switch (field) {
+      case "name":
+        showFilter(value);
+        break;
+
+      case "city":
+        break;
+      case "from":
+        break;
+      case "to":
+        break;
+      default:
+        break;
+    }
   };
 
   return (
@@ -19,7 +47,8 @@ const Header = ({ show, showFilter }) => {
             placeholder="Etkinlik, sanatçı ya da mekan arayın"
             type="text"
             id="name"
-            onChange={handleNameChange}
+            value={filters.name}
+            onChange={handleInput("name")}
           />
         </div>
         <div>
