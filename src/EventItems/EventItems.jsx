@@ -5,11 +5,12 @@ const EventItems = ({ item }) => {
   return (
     <>
       <div className="api-card-item">
+        <h3 className="category">{item.type.toUpperCase()}</h3>
         <div className="api-card-container-top-card">
-          <img src={item.img} alt="alt" />
+          <img src={item.image} alt="alt" />
         </div>
         <div className="api-card-container-bottom-card">
-          <p>{item.konser}</p>
+          <p>{item.show}</p>
           <p>{item.şehir}</p>
           <p>{item.mekan}</p>
           <p>{dayjs(item.zaman).format("DD MMMM YYYY")}</p>

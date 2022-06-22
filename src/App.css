@@ -149,9 +149,13 @@ hr {
 
 /* events lists*/
 
+.category {
+  font-size: medium;
+}
+
 .api-card-container {
   width: 55%;
-  margin: 70px auto;
+  margin: 50px auto;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -159,34 +163,22 @@ hr {
 }
 
 .api-card-container .api-card-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-image: radial-gradient(
-    circle,
-    #ffffff,
-    #fbfbfb,
-    #f7f7f7,
-    #f4f4f4,
-    #f0f0f0
-  );
-  width: 240px;
-  height: 350px;
-  margin-right: 1rem;
-  margin-top: 10px;
-}
-
-.api-card-item .api-card-container-top-card {
-  background-color: #ebebeb;
-  margin-bottom: 1rem;
+  width: 320px;
+  height: 475px;
+  border: 1px solid rgb(189, 189, 189);
+  border-radius: 2px;
+  overflow: hidden;
+  padding: 5px;
+  margin: 20px 10px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .api-card-item .api-card-container-top-card img {
   width: 100%;
+  height: 240px;
 }
 
 .api-card-item .api-card-container-bottom-card {
-  background-color: rgb(255, 151, 151);
   width: 90%;
-  padding: 20px;
 }

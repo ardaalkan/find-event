@@ -1,15 +1,12 @@
 export const mockData = [
   {
     id: "0",
-    konser: "Tarkan",
+    show: "Tarkan Konseri",
     type: "konser",
     zaman: "2023-07-18T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://im.haberturk.com/2019/09/29/ver1569742990/2526330_a9810185be8458768427f274f0cb7826.jpg",
-      "https://isbh.tmgrup.com.tr/sbh/2016/09/03/650x344/1472931590836.jpg",
-      "https://www.wireprime.com/wp-content/uploads/2019/08/Tarkan-Harbiye-Acikhava-bilet-1024x682.jpg",
-      "https://icdn.ensonhaber.com/resimler/galeri/1_6276.jpg",
     ],
     mekan: "Harbiye Açıkhava",
     adresId: "0",
@@ -20,7 +17,7 @@ export const mockData = [
   },
   {
     id: "1",
-    konser: "Elton John",
+    show: "Elton John Konseri",
     type: "konser",
     zaman: "2022-10-18T01:03:25Z",
     ücret: "ücretli",
@@ -36,16 +33,15 @@ export const mockData = [
   },
   {
     id: "2",
-    tiyatro: "Haluk Bilginer",
+    show: "Haluk Bilginer Kral Lear Oyuncu, Çevirmen",
     type: "tiyatro",
     zaman: "2022-08-18T01:03:25Z",
     ücret: "ücretli",
     image: [
-      "https://m.media-amazon.com/images/M/MV5BY2U3NDIwMzUtMDFkNC00ZDM1LWE5ODctMTNhMjMzZjRhNDI4XkEyXkFqcGdeQXVyMjQwMDg0Ng@@._V1_UY317_CR104,0,214,317_AL_.jpg",
-      "https://im.showtv.com.tr/5/5335/haluk-bilginer-500x500.png?v=1644930751",
+      "https://ichef.bbci.co.uk/news/640/cpsprodpb/10887/production/_109891776_d8d04785-7482-4798-82b6-dd243bf5796b.jpg",
     ],
     mekan: "Harbiye Açıkhava",
-    adresId: "2",
+    adresId: "1",
     şehir: "İstanbul",
     açıklama:
       "Nihat Haluk Bilginer (d. 5 Haziran 1954; İzmir), Türk oyuncu ve yönetmendir. Sinema, televizyon ve tiyatro alanlarında yaptığı çalışmalarla birçok ödülün sahibi olan oyuncu, 1990 yılında Tiyatro Stüdyosu'nun kurucuları arasında yer almış ve 1996'da Zuhal Olcay'la birlikte Oyun Atölyesi'ni kurmuştur. Kadir Has Üniversitesi Tiyatro Bölümü Danışma Kurulu Üyeliği de yapmaktadır",
@@ -53,12 +49,12 @@ export const mockData = [
   },
   {
     id: "3",
-    tiyatro: "Mahşer-i Cümbüş - Tiyatro Sporu",
+    show: "Mahşer-i Cümbüş - Tiyatro Sporu",
     type: "tiyatro",
     zaman: "2022-12-18T01:03:25Z",
     ücret: "ücretli",
     image: [
-      "https://www.biletix.com/static/images/live/event/eventimages/mahsericumbus-656-2020-1.png",
+      "https://cdn1.startv.com.tr/media/Videos/780x439/54608.jpg?v=42859,7338081366",
     ],
     mekan: "Antalya Konyaaltı Açıkhava Sahnesi",
     adresId: "0",
@@ -69,13 +65,11 @@ export const mockData = [
   },
   {
     id: "4",
-    tiyatro: "İrisi Akademi Çocuk Oyunları",
+    show: "İrisi Akademi Çocuk Oyunları",
     type: "tiyatro",
     zaman: "2022-09-18T01:03:25Z",
     ücret: "ücretsiz",
-    image: [
-      "https://tiyatrolar.com.tr/files/location/a/amasya-kultur-merkezi/gallery/183/amasya-kultur-merkezi-183.jpg",
-    ],
+    image: ["https://www.amasya.edu.tr/media/284415/01_800x533.jpg"],
     mekan: "Amasya Belediyesi Kültür Merkezi",
     adresId: "4",
     şehir: "Amasya",

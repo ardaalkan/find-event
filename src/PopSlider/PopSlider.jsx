@@ -12,6 +12,8 @@ const PopSlider = () => {
     slidesToShow: 3,
     slidesToScroll: 3,
     initialSlide: 0,
+    autoplay: true,
+    autoplaySpeed: 2200,
     responsive: [
       {
         breakpoint: 1024,

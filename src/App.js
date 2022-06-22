@@ -1,7 +1,7 @@
 import "./App.css";
 import Header from "./Header/Header";
 import PopSlider from "./PopSlider/PopSlider";
-import { mockData } from "../src/mockData";
+import { mockData } from "./mockData";
 import EventItems from "./EventItems/EventItems";
 
 function App() {
