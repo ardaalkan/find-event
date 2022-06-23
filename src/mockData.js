@@ -42,7 +42,7 @@ export const mockData = [
     ],
     mekan: "Harbiye Açıkhava",
     adresId: "1",
-    şehir: "İstanbul",
+    şehir: "İzmir",
     açıklama:
       "Nihat Haluk Bilginer (d. 5 Haziran 1954; İzmir), Türk oyuncu ve yönetmendir. Sinema, televizyon ve tiyatro alanlarında yaptığı çalışmalarla birçok ödülün sahibi olan oyuncu, 1990 yılında Tiyatro Stüdyosu'nun kurucuları arasında yer almış ve 1996'da Zuhal Olcay'la birlikte Oyun Atölyesi'ni kurmuştur. Kadir Has Üniversitesi Tiyatro Bölümü Danışma Kurulu Üyeliği de yapmaktadır",
     bilet: "190TL",

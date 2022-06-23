@@ -22,9 +22,22 @@ function App() {
     setData(filteredData);
   };
 
+  const handleFilterCity = (city) => {
+    const filteredData = mockData.filter((item) => {
+      if (item.şehir.toLowerCase().includes(city.toLowerCase())) {
+        return item;
+      }
+    });
+    setData(filteredData);
+  };
+
   return (
     <div className="App">
-      <Header show={generateShow()} showFilter={handleFilterName} />
+      <Header
+        show={generateShow()}
+        showFilter={handleFilterName}
+        cityFilter={handleFilterCity}
+      />
       <PopSlider />
       <div className="api-card-container">
         {allData.map((item) => (

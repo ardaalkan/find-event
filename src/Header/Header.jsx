@@ -1,12 +1,7 @@
 import React from "react";
 import { useState } from "react";
 
-const Header = ({ show, showFilter }) => {
-  const [name, setName] = useState("");
-  const [city, setCity] = useState("");
-  const [from, setFrom] = useState("");
-  const [to, setTo] = useState("");
-
+const Header = ({ show, showFilter, cityFilter }) => {
   const [filters, setFilters] = useState({
     name: "",
     city: "",
@@ -26,8 +21,8 @@ const Header = ({ show, showFilter }) => {
       case "name":
         showFilter(value);
         break;
-
       case "city":
+        cityFilter(value);
         break;
       case "from":
         break;
@@ -56,7 +51,7 @@ const Header = ({ show, showFilter }) => {
         </div>
       </div>
       <div className="bottom-header-filters">
-        <select className="form-control" id="show">
+        <select className="form-control-show" id="show">
           <option value="">Kategoriler</option>
           {show.map((show) => (
             <option value={show} key={show}>
@@ -64,16 +59,18 @@ const Header = ({ show, showFilter }) => {
             </option>
           ))}
         </select>
-        <select>
+        <input
+          className="form-control-city"
+          placeholder="Şehir"
+          type="text"
+          id="name"
+          value={filters.city}
+          onChange={handleInput("city")}
+        />
+        <select onChange={handleInput("")}>
           <option>BUGÜN</option>
           <option>HAFTAYA</option>
           <option>GELECEK</option>
-        </select>
-        <select>
-          <option>ANKARA</option>
-          <option>İSTANBUL</option>
-          <option>İZMİR</option>
-          <option>ANTALYA</option>
         </select>
       </div>
       <hr width="100%"></hr>
