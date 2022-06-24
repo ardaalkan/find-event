@@ -21,10 +21,10 @@ function App() {
     });
     setData(filteredData);
   };
-
-  const handleFilterCity = (city) => {
+  //TODO:change input value as a type > artist and add a concert and theatre values then add the calendar to and setTo then add pagination.
+  const handleFilterCity = (şehir) => {
     const filteredData = mockData.filter((item) => {
-      if (item.şehir.toLowerCase().includes(city.toLowerCase())) {
+      if (item.şehir.toLowerCase().includes(şehir.toLowerCase())) {
         return item;
       }
     });
