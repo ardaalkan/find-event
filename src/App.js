@@ -21,7 +21,7 @@ function App() {
     });
     setData(filteredData);
   };
-  //TODO:change input value as a type > artist and add a concert and theatre values then add the calendar to and setTo then add pagination.
+
   const handleFilterCity = (şehir) => {
     const filteredData = mockData.filter((item) => {
       if (item.şehir.toLowerCase().includes(şehir.toLowerCase())) {
@@ -31,12 +31,22 @@ function App() {
     setData(filteredData);
   };
 
+  const handleFilterType = (type) => {
+    const filteredData = mockData.filter((item) => {
+      if (item.type === type) {
+        return item;
+      }
+    });
+    setData(filteredData);
+  };
+
   return (
     <div className="App">
       <Header
-        show={generateShow()}
+        types={generateShow()}
         showFilter={handleFilterName}
         cityFilter={handleFilterCity}
+        typeFilter={handleFilterType}
       />
       <PopSlider />
       <div className="api-card-container">

@@ -1,7 +1,8 @@
 import React from "react";
 import { useState } from "react";
 
-const Header = ({ show, showFilter, cityFilter }) => {
+const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
+  console.log(types);
   const [filters, setFilters] = useState({
     name: "",
     city: "",
@@ -23,6 +24,9 @@ const Header = ({ show, showFilter, cityFilter }) => {
         break;
       case "city":
         cityFilter(value);
+        break;
+      case "type":
+        typeFilter(value);
         break;
       case "from":
         break;
@@ -51,11 +55,15 @@ const Header = ({ show, showFilter, cityFilter }) => {
         </div>
       </div>
       <div className="bottom-header-filters">
-        <select className="form-control-show" id="show">
+        <select
+          className="form-control-show"
+          id="type"
+          onChange={handleInput("type")}
+        >
           <option value="">Kategoriler</option>
-          {show.map((show) => (
-            <option value={show} key={show}>
-              {show}
+          {types.map((type) => (
+            <option value={type} key={type}>
+              {type}
             </option>
           ))}
         </select>

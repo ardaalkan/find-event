@@ -1,8 +1,8 @@
 export const mockData = [
   {
     id: "0",
-    show: "Tarkan Konseri",
-    type: "konser",
+    show: "Tarkan",
+    type: "Konser",
     zaman: "2023-07-18T01:03:25Z",
     ücret: "ücretli",
     image: [
@@ -17,8 +17,8 @@ export const mockData = [
   },
   {
     id: "1",
-    show: "Elton John Konseri",
-    type: "konser",
+    show: "Elton John",
+    type: "Konser",
     zaman: "2022-10-18T01:03:25Z",
     ücret: "ücretli",
     image: [
@@ -34,7 +34,7 @@ export const mockData = [
   {
     id: "2",
     show: "Haluk Bilginer, Kral Lear",
-    type: "tiyatro",
+    type: "Tiyatro",
     zaman: "2022-08-11T01:03:25Z",
     ücret: "ücretli",
     image: [
@@ -50,13 +50,13 @@ export const mockData = [
   {
     id: "3",
     show: "Mahşer-i Cümbüş - Tiyatro Sporu",
-    type: "tiyatro",
+    type: "Tiyatro",
     zaman: "2022-12-18T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://cdn1.startv.com.tr/media/Videos/780x439/54608.jpg?v=42859,7338081366",
     ],
-    mekan: "Antalya Konyaaltı Açıkhava Sahnesi",
+    mekan: "Konyaaltı Açıkhava Sahnesi",
     adresId: "0",
     şehir: "Antalya",
     açıklama:
@@ -66,7 +66,7 @@ export const mockData = [
   {
     id: "4",
     show: "İrisi Akademi Çocuk Oyunları",
-    type: "tiyatro",
+    type: "Tiyatro",
     zaman: "2022-09-15T01:03:25Z",
     ücret: "ücretsiz",
     image: ["https://www.amasya.edu.tr/media/284415/01_800x533.jpg"],
