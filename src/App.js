@@ -5,6 +5,7 @@ import { mockData } from "./mockData";
 import EventItems from "./EventItems/EventItems";
 import { useState } from "react";
 import dayjs from "dayjs";
+import Footer from "./Footer";
 
 const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
 dayjs.extend(isSameOrAfter);
@@ -80,6 +81,7 @@ function App() {
           <EventItems item={item} key={item.id} />
         ))}
       </div>
+      <Footer />
     </div>
   );
 }
