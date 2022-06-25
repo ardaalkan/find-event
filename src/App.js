@@ -4,6 +4,12 @@ import PopSlider from "./PopSlider/PopSlider";
 import { mockData } from "./mockData";
 import EventItems from "./EventItems/EventItems";
 import { useState } from "react";
+import dayjs from "dayjs";
+
+const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
+dayjs.extend(isSameOrAfter);
+const isSameOrBefore = require("dayjs/plugin/isSameOrBefore");
+dayjs.extend(isSameOrBefore);
 
 function App() {
   const [allData, setData] = useState(mockData);
@@ -39,6 +45,24 @@ function App() {
     });
     setData(filteredData);
   };
+  /*DAYJS*/
+  const handleFilterDate = (date, field) => {
+    const filteredData = mockData.filter((item) => {
+      if (field === "from" && dayjs(item.date).isSameOrAfter(dayjs(date))) {
+        return item;
+      }
+    });
+    setData(filteredData);
+  };
+
+  const handleFilterLast = (date, field) => {
+    const filteredData = mockData.filter((item) => {
+      if (field === "to" && dayjs(item.date).isSameOrBefore(dayjs(date))) {
+        return item;
+      }
+    });
+    setData(filteredData);
+  };
 
   return (
     <div className="App">
@@ -47,6 +71,8 @@ function App() {
         showFilter={handleFilterName}
         cityFilter={handleFilterCity}
         typeFilter={handleFilterType}
+        dateFilter={handleFilterDate}
+        lastFilter={handleFilterLast}
       />
       <PopSlider />
       <div className="api-card-container">

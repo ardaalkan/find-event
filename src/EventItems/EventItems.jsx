@@ -13,7 +13,7 @@ const EventItems = ({ item }) => {
           <p>{item.show}</p>
           <p>{item.şehir}</p>
           <p>{item.mekan}</p>
-          <p>{dayjs(item.zaman).format("DD MMMM YYYY")}</p>
+          <p>{dayjs(item.date).format("DD MMMM YYYY")}</p>
         </div>
       </div>
     </>

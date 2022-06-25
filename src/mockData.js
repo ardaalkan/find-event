@@ -3,7 +3,7 @@ export const mockData = [
     id: "0",
     show: "Tarkan",
     type: "Konser",
-    zaman: "2023-07-18T01:03:25Z",
+    date: "2023-07-18T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://im.haberturk.com/2019/09/29/ver1569742990/2526330_a9810185be8458768427f274f0cb7826.jpg",
@@ -19,7 +19,7 @@ export const mockData = [
     id: "1",
     show: "Elton John",
     type: "Konser",
-    zaman: "2022-10-18T01:03:25Z",
+    date: "2022-10-18T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/elton-john-performs-onstage-during-his-farewell-yellow-news-photo-1052010852-1552682289.jpg?crop=0.715xw:1.00xh;0.121xw,0&resize=980:*",
@@ -35,7 +35,7 @@ export const mockData = [
     id: "2",
     show: "Haluk Bilginer, Kral Lear",
     type: "Tiyatro",
-    zaman: "2022-08-11T01:03:25Z",
+    date: "2022-08-11T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://ichef.bbci.co.uk/news/640/cpsprodpb/10887/production/_109891776_d8d04785-7482-4798-82b6-dd243bf5796b.jpg",
@@ -51,7 +51,7 @@ export const mockData = [
     id: "3",
     show: "Mahşer-i Cümbüş - Tiyatro Sporu",
     type: "Tiyatro",
-    zaman: "2022-12-18T01:03:25Z",
+    date: "2022-12-18T01:03:25Z",
     ücret: "ücretli",
     image: [
       "https://cdn1.startv.com.tr/media/Videos/780x439/54608.jpg?v=42859,7338081366",
@@ -67,7 +67,7 @@ export const mockData = [
     id: "4",
     show: "İrisi Akademi Çocuk Oyunları",
     type: "Tiyatro",
-    zaman: "2022-09-15T01:03:25Z",
+    date: "2022-09-15T01:03:25Z",
     ücret: "ücretsiz",
     image: ["https://www.amasya.edu.tr/media/284415/01_800x533.jpg"],
     mekan: "Amasya Belediyesi Kültür Merkezi",

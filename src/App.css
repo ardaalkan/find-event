@@ -87,13 +87,25 @@ hr {
   height: 2rem;
 }
 
-.bottom-header-filters .form-control-show{
+.bottom-header-filters .form-control-type {
   margin-right: 2rem;
   height: 30px;
   width: 235px;
 }
 
-.bottom-header-filters .form-control-city{
+.bottom-header-filters .form-control-city {
+  margin-right: 2rem;
+  height: 30px;
+  width: 235px;
+}
+
+.bottom-header-filters .form-control-date {
+  margin-right: 2rem;
+  height: 30px;
+  width: 235px;
+}
+
+.bottom-header-filters .form-control-last-date {
   margin-right: 2rem;
   height: 30px;
   width: 235px;

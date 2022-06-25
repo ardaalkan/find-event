@@ -1,8 +1,14 @@
 import React from "react";
 import { useState } from "react";
 
-const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
-  console.log(types);
+const Header = ({
+  types,
+  showFilter,
+  cityFilter,
+  typeFilter,
+  dateFilter,
+  lastFilter,
+}) => {
   const [filters, setFilters] = useState({
     name: "",
     city: "",
@@ -29,8 +35,10 @@ const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
         typeFilter(value);
         break;
       case "from":
+        dateFilter(value, "from");
         break;
       case "to":
+        lastFilter(value, "to");
         break;
       default:
         break;
@@ -43,7 +51,7 @@ const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
         <div>
           <input
             className="form-control"
-            placeholder="Etkinlik, sanatçı ya da mekan arayın"
+            placeholder="Etkinlik Ara.."
             type="text"
             id="name"
             value={filters.name}
@@ -56,7 +64,7 @@ const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
       </div>
       <div className="bottom-header-filters">
         <select
-          className="form-control-show"
+          className="form-control-type"
           id="type"
           onChange={handleInput("type")}
         >
@@ -67,6 +75,7 @@ const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
             </option>
           ))}
         </select>
+        <i class="fa-solid fa-city"></i>
         <input
           className="form-control-city"
           placeholder="Şehir"
@@ -75,11 +84,20 @@ const Header = ({ types, showFilter, cityFilter, typeFilter }) => {
           value={filters.city}
           onChange={handleInput("city")}
         />
-        <select onChange={handleInput("")}>
-          <option>BUGÜN</option>
-          <option>HAFTAYA</option>
-          <option>GELECEK</option>
-        </select>
+        <input
+          className="form-control-date"
+          placeholder="From"
+          type="date"
+          id="date"
+          onChange={handleInput("from")}
+        />
+        <input
+          className="form-control-last-date"
+          placeholder="To"
+          type="date"
+          id="date"
+          onChange={handleInput("to")}
+        />
       </div>
       <hr width="100%"></hr>
     </header>
