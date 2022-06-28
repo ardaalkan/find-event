@@ -46,7 +46,7 @@ function App() {
     });
     setData(filteredData);
   };
-  /*DAYJS*/
+
   const handleFilterDate = (date, field) => {
     const filteredData = mockData.filter((item) => {
       if (field === "from" && dayjs(item.date).isSameOrAfter(dayjs(date))) {

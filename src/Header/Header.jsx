@@ -12,6 +12,7 @@ const Header = ({
   const [filters, setFilters] = useState({
     name: "",
     city: "",
+    type: "",
     from: "",
     to: "",
   });
@@ -59,7 +60,7 @@ const Header = ({
           />
         </div>
         <div>
-          <h2>Giriş Yap</h2>
+          <h2 className="header-auth-container">Giriş Yap</h2>
         </div>
       </div>
       <div className="bottom-header-filters">

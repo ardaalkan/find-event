@@ -7,7 +7,10 @@ const EventItems = ({ item }) => {
       <div className="api-card-item">
         <h3 className="category">{item.type.toUpperCase()}</h3>
         <div className="api-card-container-top-card">
-          <img src={item.image} alt="alt" />
+          <img
+            src={item.image}
+            alt="Artists"
+          />
         </div>
         <div className="api-card-container-bottom-card">
           <p>{item.show}</p>

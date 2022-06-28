@@ -54,6 +54,15 @@ hr {
   flex-direction: column;
 }
 
+.header-auth-container {
+  cursor: pointer;
+}
+
+.header-auth-container:hover {
+  cursor: pointer;
+  color: rgb(22, 22, 22);
+}
+
 .header-container .top-header {
   background-image: radial-gradient(
     circle,
@@ -85,6 +94,8 @@ hr {
   align-items: baseline;
   margin: 1rem;
   height: 2rem;
+  width: 55%;
+  margin: 1rem auto;
 }
 
 .top-header .form-control-name {
@@ -203,13 +214,30 @@ hr {
 .api-card-container .api-card-item {
   width: 320px;
   height: 475px;
-  border: 1px solid rgb(189, 189, 189);
+  border: 1px solid rgb(207, 207, 207);
   border-radius: 2px;
   overflow: hidden;
   padding: 5px;
   margin: 20px 10px;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.api-card-container .api-card-item:hover {
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #fbfbfb,
+    #f7f7f7,
+    #f4f4f4,
+    #f0f0f0
+  );
+  cursor: pointer;
+}
+
+.api-card-container .api-card-item .category:hover {
+  cursor: pointer;
+  text-decoration-line: underline;
 }
 
 .api-card-item .api-card-container-top-card img {
@@ -240,7 +268,8 @@ hr {
   );
   align-items: center;
   width: 100%;
-  padding: 7rem;
+  margin-top: 1rem;
+  padding: 2rem 0 2rem 0;
 }
 
 .footer-main-h1 {
@@ -248,14 +277,18 @@ hr {
   display: flex;
   justify-content: center;
   align-self: center;
-  margin: 5rem 3rem 0 5rem;
-  color: whitesmoke;
+  width: 45%;
+  margin: 50px auto;
+  color: rgb(165, 165, 165);
+  margin-bottom: 0;
 }
 
 .main-footer-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
+  width: 55%;
+  margin: 5rem auto;
 }
 
 .main-footer-container li {
@@ -272,12 +305,8 @@ hr {
   color: whitesmoke;
   margin-bottom: 2rem;
   padding-bottom: 3px;
-  border-bottom: 0.2rem solid rgb(138, 138, 138);
+  border-bottom: 0.2rem solid rgb(119, 119, 119);
   border-radius: 5%;
-}
-
-.main-footer-col1 {
-  margin: 0 3rem 0 3rem;
 }
 
 .main-footer-col1 li {
@@ -286,18 +315,10 @@ hr {
   border-radius: 5%;
 }
 
-.main-footer-col2 {
-  margin: 0 3rem 0 3rem;
-}
-
 .main-footer-col2 li {
   list-style: none;
   margin-top: 1.5rem;
   border-radius: 5%;
-}
-
-.main-footer-col3 {
-  margin: 0 3rem 0 3rem;
 }
 
 .main-footer-col3 li {
@@ -321,10 +342,9 @@ hr {
   .main-footer-col3 {
     width: 190px;
   }
-  .footer-main-h1{
-    width: 190px;
+  .footer-main-h1 {
+    text-align: left;
   }
-
 }
 
 /* Footer */
