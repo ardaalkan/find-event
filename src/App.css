@@ -90,8 +90,7 @@ hr {
 .bottom-header-filters {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: baseline;
+  justify-content: space-evenly;  
   margin: 1rem;
   height: 2rem;
   width: 55%;
@@ -111,27 +110,25 @@ hr {
 }
 
 .bottom-header-filters .form-control-type {
-  margin-right: 2rem;
   height: 30px;
-  width: 235px;
+  width: 100%;
 }
 
 .bottom-header-filters .form-control-city {
-  margin-right: 2rem;
   height: 30px;
-  width: 235px;
+  width: 100%;
+  margin-right: 30px;
 }
 
 .bottom-header-filters .form-control-date {
-  margin-right: 2rem;
   height: 30px;
-  width: 235px;
+  width: 100%;
+  margin-right: 30px;
 }
 
 .bottom-header-filters .form-control-last-date {
-  margin-right: 2rem;
   height: 30px;
-  width: 235px;
+  width: 100%;
 }
 
 .bottom-header-filters select {
@@ -170,7 +167,7 @@ hr {
 }
 
 .slick-slide > div {
-  margin: 0 5px;
+  margin: 0 1px;
 }
 
 .slick-list {
@@ -249,6 +246,23 @@ hr {
   width: 90%;
 }
 /* events lists*/
+
+.content-d-exists {
+  padding: 50px;
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #fbfbfb,
+    #f7f7f7,
+    #f4f4f4,
+    #f0f0f0
+  );
+  width: 100%;
+  font-weight: bold;
+  color: rgb(92, 92, 92);
+  transition: all .25s ease-in-out;
+  scale: 0.6s;
+}
 
 /* Footer */
 

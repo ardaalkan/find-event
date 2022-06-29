@@ -77,7 +77,7 @@ function App() {
       />
       <PopSlider />
       <div className="api-card-container">
-        {allData.map((item) => (
+        {allData.length === 0 ? <span className="content-d-exists">Mevcut değil</span> : allData.map((item) => (
           <EventItems item={item} key={item.id} />
         ))}
       </div>
