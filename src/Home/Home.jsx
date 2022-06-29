@@ -1,18 +1,18 @@
-import "./App.css";
-import Header from "./Header/Header";
-import PopSlider from "./PopSlider/PopSlider";
-import { mockData } from "./mockData";
-import EventItems from "./EventItems/EventItems";
+import Header from "../Header/Header";
+import PopSlider from "../PopSlider/PopSlider";
+import { mockData } from "../mockData";
+import EventItems from "../EventItems/EventItems";
 import { useState } from "react";
 import dayjs from "dayjs";
-import Footer from "./Footer";
+import Footer from "../Footer";
+import "../Home/Home.css"
 
 const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
 dayjs.extend(isSameOrAfter);
 const isSameOrBefore = require("dayjs/plugin/isSameOrBefore");
 dayjs.extend(isSameOrBefore);
 
-function App() {
+function Home() {
   const [allData, setData] = useState(mockData);
 
   const generateShow = () => {
@@ -77,13 +77,15 @@ function App() {
       />
       <PopSlider />
       <div className="api-card-container">
-        {allData.length === 0 ? <span className="content-d-exists">Mevcut değil</span> : allData.map((item) => (
-          <EventItems item={item} key={item.id} />
-        ))}
+        {allData.length === 0 ? (
+          <span className="content-d-exists">Mevcut değil</span>
+        ) : (
+          allData.map((item) => <EventItems item={item} key={item.id} />)
+        )}
       </div>
       <Footer />
     </div>
   );
 }
 
-export default App;
+export default Home;
