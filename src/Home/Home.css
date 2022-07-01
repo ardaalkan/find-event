@@ -90,7 +90,7 @@ hr {
 .bottom-header-filters {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
   margin: 1rem;
   height: 2rem;
   width: 55%;
@@ -260,8 +260,24 @@ hr {
   width: 100%;
   font-weight: bold;
   color: rgb(92, 92, 92);
-  transition: all .25s ease-in-out;
-  scale: 0.6s;
+}
+
+.show-more-item {
+  display: flex;
+  padding: 1rem;
+  color: rgb(92, 92, 92);
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #fbfbfb,
+    #f7f7f7,
+    #f4f4f4,
+    #f0f0f0
+  );
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: 0 auto;
 }
 
 /* Footer */

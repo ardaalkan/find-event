@@ -5,7 +5,7 @@ import EventItems from "../EventItems/EventItems";
 import { useState } from "react";
 import dayjs from "dayjs";
 import Footer from "../Footer";
-import "../Home/Home.css"
+import "../Home/Home.css";
 
 const isSameOrAfter = require("dayjs/plugin/isSameOrAfter");
 dayjs.extend(isSameOrAfter);
@@ -14,6 +14,11 @@ dayjs.extend(isSameOrBefore);
 
 function Home() {
   const [allData, setData] = useState(mockData);
+  const [visible, setVisible] = useState(3);
+
+  const showMoreItem = () => {
+    setVisible((prevValue) => prevValue + 3);
+  };
 
   const generateShow = () => {
     return [...new Set(mockData.map((item) => item.type))];
@@ -78,11 +83,21 @@ function Home() {
       <PopSlider />
       <div className="api-card-container">
         {allData.length === 0 ? (
-          <span className="content-d-exists">Mevcut değil</span>
+          <span className="content-d-exists">İçerik Şuan Mevcut Değil </span>
         ) : (
-          allData.map((item) => <EventItems item={item} key={item.id} />)
+          allData
+            .slice(0, visible)
+            .map((item) => <EventItems item={item} key={item.id} />)
         )}
       </div>
+      {allData.length === "this.state.allData.length" ? (
+        ""
+      ) : (
+        <div className="show-more-item" onClick={showMoreItem}>
+          Daha fazla yükle..
+        </div>
+      )}
+
       <Footer />
     </div>
   );
