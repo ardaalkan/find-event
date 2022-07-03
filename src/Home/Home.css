@@ -265,7 +265,7 @@ hr {
 .show-more-item {
   display: flex;
   padding: 1rem;
-  color: rgb(92, 92, 92);
+  color: rgb(58, 58, 58);
   background-image: radial-gradient(
     circle,
     #ffffff,
@@ -274,10 +274,33 @@ hr {
     #f4f4f4,
     #f0f0f0
   );
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   width: 20%;
   margin: 0 auto;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.all-item-exists {
+  display: flex;
+  padding: 1rem;
+  color: rgb(100, 100, 100);
+  background-image: radial-gradient(
+    circle,
+    #ffffff,
+    #fbfbfb,
+    #f7f7f7,
+    #f4f4f4,
+    #f0f0f0
+  );
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  margin: 0 auto;
+  font-weight: 600;
 }
 
 /* Footer */

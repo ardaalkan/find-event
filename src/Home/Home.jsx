@@ -90,14 +90,13 @@ function Home() {
             .map((item) => <EventItems item={item} key={item.id} />)
         )}
       </div>
-      {allData.length === "this.state.allData.length" ? (
-        ""
+      {allData.length < visible ? (
+        <div className="all-item-exists">Tüm içerikler yüklendi</div>
       ) : (
         <div className="show-more-item" onClick={showMoreItem}>
           Daha fazla yükle..
         </div>
       )}
-
       <Footer />
     </div>
   );
