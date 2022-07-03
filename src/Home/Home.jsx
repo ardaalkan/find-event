@@ -83,18 +83,20 @@ function Home() {
       <PopSlider />
       <div className="api-card-container">
         {allData.length === 0 ? (
-          <span className="content-d-exists">İçerik Şuan Mevcut Değil </span>
+          <div className="content-d-exists">İçerik Şuan Mevcut Değil </div>
         ) : (
           allData
             .slice(0, visible)
             .map((item) => <EventItems item={item} key={item.id} />)
         )}
       </div>
-      {allData.length < visible ? (
-        <div className="all-item-exists">Tüm içerikler yüklendi</div>
+      {allData.length === 0 ? (
+        ""
+      ) : allData.length < visible ? (
+        <div className="all-item-exists">Tüm etkinlikler yüklendi..</div>
       ) : (
         <div className="show-more-item" onClick={showMoreItem}>
-          Daha fazla yükle..
+          Daha fazla etkinlik yükle..
         </div>
       )}
       <Footer />

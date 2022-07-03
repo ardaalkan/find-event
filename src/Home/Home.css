@@ -265,7 +265,7 @@ hr {
 .show-more-item {
   display: flex;
   padding: 1rem;
-  color: rgb(58, 58, 58);
+  color: rgb(92, 92, 92);
   background-image: radial-gradient(
     circle,
     #ffffff,
